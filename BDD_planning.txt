@@ -1,0 +1,129 @@
+User: Empresa e Candidato
+
+Empresa:
+Cadastro da empresa
+* Verificar se os campos são validos
+* Verificar se já existe o cadastro
+* Verificar se os campos não estão nulos
+
+BDDCompany
+	COMO
+           uma compania
+	EU QUERO
+	   me afiliar ao sysva
+	PARA
+	   CENARIO 1
+		DADO
+		   que possuo os dados válidos
+		QUANDO
+		   irei me registrar
+		ENTÃO
+		   devo ser registrado com sucesso
+	   CENARIO 2
+		DADO
+		   que possuo os dados inválidos
+		QUANDO
+		   irei me registrar
+		ENTÃO
+		   devo receber um erro informando a minha falha
+	   CENARIO 3
+		DADO
+		   que já possuo um registro
+		QUANDO
+		   irei me registrar
+		ENTÃO
+		   devo receber um erro informando que já sou registrado
+	   CENARIO 4
+		DADO
+		   que não possuo um registro
+		QUANDO
+		   irei me registrar
+		ENTÃO
+		   devo ser registrado com sucesso
+	   CENARIO 5
+		DADO
+		   que fornecir informações para todos os campos
+		QUANDO
+		   irei me registrar
+		ENTÃO
+		   devo ser registrado com sucesso
+	   CENARIO 6
+		DADO
+		   que não fornecir informações para todos os campos
+		QUANDO
+		   irei me registrar
+		ENTÃO
+		   devo receber um erro informando qual campo está nulo
+
+Candidato:
+Candidatar a vaga
+* Verificar se os campos são validos
+* Verificar se já existe uma candidatura para essa vaga
+* Verificar se os campos não estão nulos
+* Verificar se estar dentro do perfil da vaga
+
+BDDCandidato
+	COMO
+           um candidato
+	EU QUERO
+	   me candidatar a uma vaga
+	PARA
+	   CENARIO 1
+		DADO
+		   que possuo os dados válidos
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo ser inscrito com sucesso
+	   CENARIO 2
+		DADO
+		   que possuo os dados inválidos
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo receber um erro informando a minha falha
+	   CENARIO 3
+		DADO
+		   que já possuo uma candidatura
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo receber um erro informando que já estou inscrito
+	   CENARIO 4
+		DADO
+		   que não já possuo uma candidatura
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo ser inscrito com sucesso
+	   CENARIO 5
+		DADO
+		   que fornecir informações para todos os campos
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo ser inscrito com sucesso
+	   CENARIO 6
+		DADO
+		   que não fornecir informações para todos os campos
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo receber um erro informando qual campo está nulo
+	   CENARIO 7
+		DADO
+		   que não estou dentro do perfil da vaga
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo não receber nenhuma pontuação
+	   CENARIO 8
+		DADO
+		   que estou dentro do perfil da vaga
+		QUANDO
+		   irei me candidatar
+		ENTÃO
+		   devo ser pontuado de acordo com a quantidade que me enquadro com a vaga
+
+
+

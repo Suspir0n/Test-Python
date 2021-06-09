@@ -1,0 +1,49 @@
+User: Empresa e Candidato
+
+Empresa:
+Cadastro da empresa
+* Verificar se os campos são validos
+* Verificar se já existe o cadastro
+* Verificar se os campos não estão nulos
+
+TesteCadastro
+	SUB - Verificar se os campos são validos
+		se o campo é valido sucesso
+		se o campo for invalido deve dar erro
+	SUB - Verificar se já existe o cadastro
+		se o cadastro não existir é sucesso
+		se o cadastro existir deve dar erro
+	SUB - Verificar se os campos não estão nulos
+		se o campo tiver dado é sucesso
+		se o campo não tiver dado deve dar erro
+
+Disponibilizar vagas
+* Verificar se os campos não estão nulos
+
+TesteVagas
+	SUB - Verificar se os campos não estão nulos
+		se o campo tiver dado é sucesso
+		se o campo não tiver dado deve dar erro
+
+
+
+Candidato:
+Candidatar a vaga
+* Verificar se os campos são validos
+* Verificar se já existe uma candidatura para essa vaga
+* Verificar se os campos não estão nulos
+* Verificar se estar dentro do perfil da vaga
+
+TesteCandidatar
+	SUB - Verificar se os campos são validos
+		se o campo é valido sucesso
+		se o campo for invalido deve dar erro
+	SUB - Verificar se já existe uma candidatura para essa vaga
+		se a candidatura não existir é sucesso
+		se a candidatura existir deve dar erro
+	SUB - Verificar se os campos não estão nulos
+		se o campo tiver dado é sucesso
+		se o campo não tiver dado deve dar erro
+	SUB - Verificar se estar dentro do perfil da vaga
+		se estiver dentro do perfil, pontua
+		se não estiver dentro do perfil, não pontua
