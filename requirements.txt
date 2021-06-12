@@ -2,3 +2,7 @@ django==3.2.4
 django-mysql==3.11.1
 mysqlclient==2.0.3
 behave-django==1.4.0
+pytest==6.2.4
+django-allauth==0.44.0
+splinter==0.14.0
+django-crispy-forms==1.12.0
